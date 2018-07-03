@@ -53,7 +53,7 @@
                         this.$router.push({ path: '/' })
                     })
                     .catch(err => {
-                        alert('Error on create user')
+                        console.log('Error on create user')
                     })
             },
 
@@ -61,10 +61,11 @@
             {
                 this.$http.post(`${window.basePath}/auth/register`, this.user)
                 .then(response => {
+                    console.log(response.data[0]);
                     this.doLogin()
                 })
                 .catch(err => {
-                    alert('verify your credentials')
+                    console.log('verify your credentials')
                 })
             }
 
