@@ -11,11 +11,44 @@
                                 </v-toolbar>
                                 <v-card-text>
 
-                                    <v-text-field prepend-icon="person" name="name" label="Name" type="text" v-model="user.name" required></v-text-field>
+                                    <v-text-field  
+                                        v-validate="'required|max:6'"
+                                        :counter="6"
+                                        :error-messages="errors.collect('name')"
+                                        data-vv-name="name"
+                                        required 
+                                        prepend-icon="person" 
+                                        name="name" 
+                                        label="Name" 
+                                        type="text" 
+                                        v-model="user.name">
+                                    </v-text-field>
 
-                                    <v-text-field prepend-icon="person" name="email" label="Email" type="email" v-model="user.email" required></v-text-field>
+                                    <v-text-field
+                                        v-validate="'required|email'"
+                                        :error-messages="errors.collect('email')"
+                                        data-vv-name="email"
+                                        prepend-icon="person"
+                                        name="email" 
+                                        label="Email" 
+                                        type="email" 
+                                        v-model="user.email" 
+                                        required>
+                                    </v-text-field>
 
-                                    <v-text-field prepend-icon="lock" name="password" label="Password" id="password" type="password" v-model="user.password" required></v-text-field>
+                                    <v-text-field
+                                        v-validate="'required|min:3|max:128'"
+                                        :counter="3"
+                                        :error-messages="errors.collect('password')"
+                                        data-vv-name="password"
+                                        prepend-icon="lock" 
+                                        name="password" 
+                                        label="Password" 
+                                        id="password" 
+                                        type="password" 
+                                        v-model="user.password" 
+                                        required>
+                                    </v-text-field>
 
                                 </v-card-text>
                                 <v-card-actions>
@@ -35,40 +68,66 @@
 </template>
 
 <script>
-    export default {
-        name: 'LoginForm',
-        data: () => ({
-            user: { email: '', password: '' }
-        }),
+import Vue from "vue";
+import VeeValidate from "vee-validate";
+Vue.use(VeeValidate);
 
-        mounted() { },
-
-        methods: {
-
-            doLogin () 
-            {
-                this.$http.post(`${window.basePath}/auth/login`, this.user)
-                    .then(response => {
-                        this.$auth.setToken(response.data.token)
-                        this.$router.push({ path: '/' })
-                    })
-                    .catch(err => {
-                        console.log('Error on create user')
-                    })
-            },
-
-            doRegister () 
-            {
-                this.$http.post(`${window.basePath}/auth/register`, this.user)
-                .then(response => {
-                    console.log(response.data[0]);
-                    this.doLogin()
-                })
-                .catch(err => {
-                    console.log('verify your credentials')
-                })
-            }
-
+export default {
+  $_veeValidate: {
+    validator: "new"
+  },
+  name: "LoginForm",
+  data: () => ({
+    user: { email: "", password: "" },
+    dictionary: {
+      attributes: {
+        email: "E-mail Address"
+        // custom attributes
+      },
+      custom: {
+        name: {
+          required: () => "Name can not be empty",
+          max: "The name field may not be greater than 10 characters"
+          // custom messages
+        },
+        password: {
+          required: "Password field is required",
+          min: "Password is too short",
+          max: "Password is too large"
         }
+      }
     }
+  }),
+
+  mounted() {
+    this.$validator.localize("en", this.dictionary);
+  },
+
+  methods: {
+    doLogin() {
+      this.$validator.validateAll();
+      this.$http
+        .post(`${window.basePath}/auth/login`, this.user)
+        .then(response => {
+          this.$auth.setToken(response.data.token);
+          this.$router.push({ path: "/" });
+        })
+        .catch(err => {
+          console.log("Error on create user");
+        });
+    },
+
+    doRegister() {
+      this.$validator.validateAll();
+      this.$http
+        .post(`${window.basePath}/auth/register`, this.user)
+        .then(response => {
+          this.doLogin();
+        })
+        .catch(err => {
+          console.log("verify your credentials");
+        });
+    }
+  }
+};
 </script>
