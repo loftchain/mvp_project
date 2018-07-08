@@ -10,17 +10,45 @@
                                 <v-toolbar-title>Login form</v-toolbar-title>
                             </v-toolbar>
                             <v-card-text>
-                                
-                                    <v-text-field prepend-icon="person" name="login" label="Email" type="email" v-model="user.email" required></v-text-field>
-                                    <v-text-field prepend-icon="lock" name="password" label="Password" id="password" type="password" v-model="user.password" required></v-text-field>
-                                
+
+                                    <v-text-field
+                                        v-validate="'required|email'"
+                                        :error-messages="errors.collect('email')"
+                                        data-vv-name="email"
+                                        prepend-icon="person"
+                                        name="login"
+                                        label="Email"
+                                        type="email"
+                                        v-model="user.email"
+                                        required>
+                                    </v-text-field>
+                                    <v-text-field
+                                        v-validate="'required|min:3|max:128'"
+                                        :error-messages="errors.collect('password')"
+                                        data-vv-name="password"
+                                        prepend-icon="lock"
+                                        name="password"
+                                        label="Password"
+                                        id="password"
+                                        type="password"
+                                        v-model="user.password"
+                                        required>
+                                    </v-text-field>
+
                             </v-card-text>
                             <v-card-actions>
                                 <router-link :to="{ name: 'register' }" class="btn btn--depressed">
                                     Register
                                 </router-link>
                                 <v-spacer></v-spacer>
-                                <v-btn type="submit" color="primary">Login</v-btn>
+                              <invisible-recaptcha
+                                sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
+                                :callback="doLogin"
+                                class="btn btn-danger"
+                                color="primary"
+                                type="submit">
+                                Login
+                              </invisible-recaptcha>
                             </v-card-actions>
                         </v-card>
                         </v-form>
@@ -32,29 +60,59 @@
 </template>
 
 <script>
-    export default {
-        name: 'LoginForm',
-        data: () => ({
-            user: {email: '', password: ''}
-        }),
+  import Vue from "vue";
+  import VeeValidate from "vee-validate";
+  import InvisibleRecaptcha from 'vue-invisible-recaptcha';
 
-        mounted () 
-        {},
 
-        methods: {
-
-            doLogin () 
-            {
-                this.$http.post(`${window.basePath}/auth/login`, this.user)
-                    .then(response => {
-                        this.$auth.setToken(response.data.token)
-                        this.$router.push({ path: '/' })
-                    })
-                    .catch(err => {
-                        alert('verify your credentials')
-                    })
-            }
-
+  Vue.use(VeeValidate);
+  export default {
+    components: { "invisible-recaptcha": InvisibleRecaptcha },
+    $_veeValidate: {
+      validator: "new"
+    },
+    name: "LoginForm",
+    data: () => ({
+      user: {
+        email: "",
+        password: ""
+      },
+      dictionary: {
+        attributes: {
+          email: "E-mail Address"
+        },
+        custom: {
+          email: {
+            required: "Name can not be empty",
+            min: "email is too short"
+          },
+          password: {
+            required: "Password field is required",
+            min: "Password is too short",
+            max: "Password is too large"
+          }
         }
+      }
+    }),
+
+    mounted() {
+      this.$validator.localize("en", this.dictionary);
+    },
+
+    methods: {
+      doLogin() {
+        this.$validator.validateAll();
+
+        this.$http
+          .post(`${window.basePath}/auth/login`, this.user)
+          .then(response => {
+            this.$auth.setToken(response.data.token);
+            this.$router.push({path: "/"});
+          })
+          .catch(err => {
+            console.log("verify your credentials");
+          });
+      }
     }
+  };
 </script>

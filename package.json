@@ -31,9 +31,12 @@
     "@adonisjs/session": "^1.0.23",
     "@adonisjs/shield": "^1.0.6",
     "@adonisjs/validator": "^5.0.3",
+    "@finpo/vue2-recaptcha-invisible": "^1.1.4",
     "mysql": "^2.15.0",
-    "sqlite": "^2.9.1",
-    "vee-validate": "^2.1.0-beta.5"
+    "vee-validate": "^2.1.0-beta.5",
+    "vue-grecaptcha": "^1.0.1",
+    "vue-invisible-recaptcha": "^0.2.1",
+    "vue-recaptcha": "^1.1.1"
   },
   "devDependencies": {
     "axios": "^0.18.0",

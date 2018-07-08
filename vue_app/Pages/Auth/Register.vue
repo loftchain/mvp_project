@@ -11,16 +11,16 @@
                                 </v-toolbar>
                                 <v-card-text>
 
-                                    <v-text-field  
-                                        v-validate="'required|max:6'"
-                                        :counter="6"
+                                    <v-text-field
+                                        v-validate="'required|max:55'"
+                                        :counter="55"
                                         :error-messages="errors.collect('name')"
                                         data-vv-name="name"
-                                        required 
-                                        prepend-icon="person" 
-                                        name="name" 
-                                        label="Name" 
-                                        type="text" 
+                                        required
+                                        prepend-icon="person"
+                                        name="name"
+                                        label="Name"
+                                        type="text"
                                         v-model="user.name">
                                     </v-text-field>
 
@@ -29,10 +29,10 @@
                                         :error-messages="errors.collect('email')"
                                         data-vv-name="email"
                                         prepend-icon="person"
-                                        name="email" 
-                                        label="Email" 
-                                        type="email" 
-                                        v-model="user.email" 
+                                        name="email"
+                                        label="Email"
+                                        type="email"
+                                        v-model="user.email"
                                         required>
                                     </v-text-field>
 
@@ -41,12 +41,12 @@
                                         :counter="3"
                                         :error-messages="errors.collect('password')"
                                         data-vv-name="password"
-                                        prepend-icon="lock" 
-                                        name="password" 
-                                        label="Password" 
-                                        id="password" 
-                                        type="password" 
-                                        v-model="user.password" 
+                                        prepend-icon="lock"
+                                        name="password"
+                                        label="Password"
+                                        id="password"
+                                        type="password"
+                                        v-model="user.password"
                                         required>
                                     </v-text-field>
 
@@ -56,7 +56,14 @@
                                         Login
                                     </router-link>
                                     <v-spacer></v-spacer>
-                                    <v-btn type="submit" color="primary">Register</v-btn>
+                                    <invisible-recaptcha
+                                      sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
+                                      :callback="doRegister"
+                                      class="btn btn-danger"
+                                      color="primary"
+                                      type="submit">
+                                      Register
+                                    </invisible-recaptcha>
                                 </v-card-actions>
                             </v-card>
                         </v-form>
@@ -70,9 +77,12 @@
 <script>
 import Vue from "vue";
 import VeeValidate from "vee-validate";
+import InvisibleRecaptcha from 'vue-invisible-recaptcha';
+
 Vue.use(VeeValidate);
 
 export default {
+  components: { "invisible-recaptcha": InvisibleRecaptcha },
   $_veeValidate: {
     validator: "new"
   },
@@ -127,6 +137,9 @@ export default {
         .catch(err => {
           console.log("verify your credentials");
         });
+    },
+    doSomething() {
+      console.log('here');
     }
   }
 };
