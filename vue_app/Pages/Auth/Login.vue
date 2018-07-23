@@ -66,8 +66,15 @@
 
 
   Vue.use(VeeValidate);
+
+  Vue.component('invisible-recaptcha', function (resolve, reject) {
+    setTimeout(function () {
+      resolve(InvisibleRecaptcha)
+    }, 500)
+  })
+
+
   export default {
-    components: { "invisible-recaptcha": InvisibleRecaptcha },
     $_veeValidate: {
       validator: "new"
     },

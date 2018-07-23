@@ -53,7 +53,7 @@
                                 </v-card-text>
                                 <v-card-actions>
                                     <router-link :to="{ name: 'login' }" class="btn btn--depressed">
-                                        Login
+                                        forgot your password
                                     </router-link>
                                     <v-spacer></v-spacer>
                                     <invisible-recaptcha

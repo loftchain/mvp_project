@@ -1,7 +1,6 @@
 <template>
     <div>
         <h1>Contacts page</h1>
-
         <v-list two-line>
           <template v-for="(item, index) in items">
             <v-subheader v-if="item.header" :key="item.header">{{ item.header }}</v-subheader>

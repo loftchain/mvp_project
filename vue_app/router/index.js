@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Login from '../Pages/Auth/Login'
 import Register from '../Pages/Auth/Register'
+import Forgot from '../Pages/Auth/Forgot'
 
 import DashboardLayout from '../Pages/Dashboard/Layout';
 import DashboardHome from '../Pages/Dashboard/Children/Home'
@@ -13,6 +14,7 @@ let router = new VueRouter({
     routes: [
         { path: '/login', component: Login, name: 'login', meta: { requiredAuth: false } },
         { path: '/register', component: Register, name: 'register', meta: { requiredAuth: false } },
+        { path: '/forgot', component: Forgot, name: 'forgot', meta: { requiredAuth: false } },
         {
             path: '/', component: DashboardLayout, meta: { requiredAuth: true },
             children: [
