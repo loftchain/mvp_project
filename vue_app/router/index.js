@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from '../Pages/Auth/Login'
-import Register from '../Pages/Auth/Register'
-import Forgot from '../Pages/Auth/Forgot'
+import Login from '../components/Auth/login/index'
+import Register from '../components/Auth/register/index'
+import Forgot from '../components/Auth/forgot/index'
 
-import DashboardLayout from '../Pages/Dashboard/Layout';
+import ParentLayout from '../components/Layouts/_parentLayout/index'
 import DashboardHome from '../Pages/Dashboard/Children/Home'
 import DashboardContacts from '../Pages/Dashboard/Children/Contacts'
 
@@ -16,7 +16,7 @@ let router = new VueRouter({
         { path: '/register', component: Register, name: 'register', meta: { requiredAuth: false } },
         { path: '/forgot', component: Forgot, name: 'forgot', meta: { requiredAuth: false } },
         {
-            path: '/', component: DashboardLayout, meta: { requiredAuth: true },
+            path: '/', component: ParentLayout, meta: { requiredAuth: true },
             children: [
                 { path: '', component: DashboardHome, name: 'dashboard-home' },
                 { path: 'contacts', component: DashboardContacts, name: 'dashboard-contacts' },
@@ -32,7 +32,6 @@ router.beforeEach((to, from, next) => {
     } else {
         next()
     }
-
 })
 
 export default router;

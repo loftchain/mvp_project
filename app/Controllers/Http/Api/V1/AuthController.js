@@ -1,14 +1,15 @@
 'use strict'
 
 const User = use('App/Models/User')
+const Logger = use('Logger')
 
 class AuthController {
 
     async login ({ request, response, auth })
     {
+        Logger.transport('file').info('debug');
         const { email, password } = request.all()
         const login = await auth.attempt(email, password)
-
         return login
     }
 

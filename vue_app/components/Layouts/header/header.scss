@@ -1,0 +1,13 @@
+.header {
+  z-index: 2;
+
+  .toolbar{
+    box-shadow: 0 0 0 0;
+    background: white;
+    border-bottom: 1px solid #0000001f;
+    height:100px;
+
+    &__content{
+    }
+  }
+}

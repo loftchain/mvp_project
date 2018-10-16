@@ -1,0 +1,17 @@
+<section class="header">
+  <v-toolbar dark fixed app>
+    <v-toolbar-title>Application</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-menu bottom left>
+      <v-btn slot="activator" dark>
+        <v-icon>person</v-icon> {{ user.name }}
+      </v-btn>
+      <v-list>
+        <v-list-tile @click="logout">
+          <v-list-tile-title>Logout</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+  </v-toolbar>
+</section>
+

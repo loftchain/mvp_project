@@ -27,7 +27,6 @@ export default function (Vue) {
         .then(response => {
           console.log(response);
           console.log('cool works!');
-          
         })
         .catch(err => {
           console.log("smth went wrong with mailchimp");
