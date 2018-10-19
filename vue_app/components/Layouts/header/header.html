@@ -1,17 +1,21 @@
 <section class="header">
-  <v-toolbar dark fixed app>
-    <v-toolbar-title>Application</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-menu bottom left>
-      <v-btn slot="activator" dark>
-        <v-icon>person</v-icon> {{ user.name }}
-      </v-btn>
-      <v-list>
-        <v-list-tile @click="logout">
-          <v-list-tile-title>Logout</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
-  </v-toolbar>
+  <div class="header__wrapper">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="Open Packaging Network" class="header__logo-icon">
+    </div>
+    <div class="header__notification">
+      <img src="images/notification.png" alt="notification">
+    </div>
+    <div class="header__company">
+        <v-menu transition="scale-transition" bottom right>
+          <v-btn slot="activator" dark> <v-icon>person</v-icon> {{ user.name }} </v-btn>
+          <v-list>
+            <v-list-tile @click="logout">
+              <v-list-tile-title>Logout</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
+    </div>
+  </div>
 </section>
 

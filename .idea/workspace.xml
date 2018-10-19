@@ -3,18 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="3ab060bb-b0d8-46d6-857d-d720ea7b2e34" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/Api/V1/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/Api/V1/AuthController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/1503248427885_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/1503248427885_user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Auth/Forgot.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Auth/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Auth/Register.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Layout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Drawer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Toolbar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_app/packages/mailchimp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/packages/mailchimp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Children/Contacts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/Pages/Dashboard/Children/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_app/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_app/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,47 +27,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html">
+      <file leaf-file-name="1539869142356_orders_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1539869142356_orders_schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+            <state relative-caret-position="216">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss">
+      <file leaf-file-name="1449937620398_materials_schema.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1449937620398_materials_schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="144">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.html">
+      <file leaf-file-name="1449938024042_packages_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1449938024042_packages_schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="144">
+              <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss">
+      <file leaf-file-name="1539940569387_responds_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1539940569387_responds_schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="216">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.js">
+      <file leaf-file-name="1539941333802_transactions_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1539941333802_transactions_schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="234">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1439937791379_material_category_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1439937791379_material_category_schema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1439938018394_package_categories_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1439938018394_package_categories_schema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1539868443286_companies_schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1539868443286_companies_schema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" selection-start-line="18" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1503248427885_user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1503248427885_user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1503248427886_token.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/1503248427886_token.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -88,7 +134,11 @@
       <find>Logger</find>
       <find>serving app on</find>
       <find>Drawer</find>
+      <find>main-nav</find>
     </findStrings>
+    <replaceStrings>
+      <replace>navbar</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\OSPanel\domains\myapp</dir>
       <dir>C:\OSPanel\domains\myapp\vue_app\Pages</dir>
@@ -100,12 +150,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/start/routes.js" />
-        <option value="$PROJECT_DIR$/start/app.js" />
         <option value="$PROJECT_DIR$/start/kernel.js" />
-        <option value="$PROJECT_DIR$/resources/views/frontend.edge" />
-        <option value="$PROJECT_DIR$/vue_app/Pages/Dashboard/Children/Contacts.vue" />
         <option value="$PROJECT_DIR$/vue_app/app.js" />
         <option value="$PROJECT_DIR$/vue_app/env.js" />
         <option value="$PROJECT_DIR$/vue_app/packages/mailchimp/index.js" />
@@ -126,20 +171,36 @@
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/Layout.vue" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.html" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.js" />
-        <option value="$PROJECT_DIR$/vue_app/router/index.js" />
         <option value="$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Footer.vue" />
-        <option value="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html" />
         <option value="$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Toolbar.vue" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.js" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/header/header.js" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.js" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.js" />
+        <option value="$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss" />
+        <option value="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html" />
+        <option value="$PROJECT_DIR$/vue_app/Pages/Dashboard/Children/Contacts.vue" />
+        <option value="$PROJECT_DIR$/vue_app/router/index.js" />
+        <option value="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html" />
+        <option value="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.scss" />
+        <option value="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.html" />
+        <option value="$PROJECT_DIR$/resources/views/frontend.edge" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.scss" />
         <option value="$PROJECT_DIR$/vue_app/components/Layouts/header/header.html" />
-        <option value="$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss" />
-        <option value="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss" />
-        <option value="$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html" />
+        <option value="$PROJECT_DIR$/database/migrations/1503248427885_user.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539937791379_material_category_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539938018394_package_categories_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539938024042_packages_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539868443286_companies_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539937620398_materials_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539940569387_responds_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539869142356_orders_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539942605857_order_type_1_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539942612615_order_type_2_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539942618496_order_type_3_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539938977160_comments_schema.js" />
+        <option value="$PROJECT_DIR$/database/migrations/1539941333802_transactions_schema.js" />
       </list>
     </option>
   </component>
@@ -175,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +247,17 @@
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="vue_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -192,58 +265,11 @@
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="vue_app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Children" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,6 +289,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\myapp\vue_app\components\Layouts" />
       <recent name="C:\OSPanel\domains\myapp\vue_app\Pages\Auth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\myapp\public" />
+      <recent name="C:\OSPanel\domains\myapp\vue_app\assets" />
+      <recent name="C:\OSPanel\domains\myapp\vue_app\components\Home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -319,26 +350,29 @@
       <workItem from="1532373686017" duration="4069000" />
       <workItem from="1534486652100" duration="20000" />
       <workItem from="1539603545613" duration="426000" />
-      <workItem from="1539677500627" duration="16154000" />
+      <workItem from="1539677500627" duration="24966000" />
+      <workItem from="1539759032213" duration="599000" />
+      <workItem from="1539789730041" duration="329000" />
+      <workItem from="1539846622842" duration="4316000" />
+      <workItem from="1539933300442" duration="6802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53780000" />
+    <option name="totallyTimeSpent" value="74638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1135" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931788" visible="true" weight="0.20518245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931788" visible="true" weight="0.21840297" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007932" side_tool="true" weight="0.3408857" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007932" side_tool="true" weight="0.23583934" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" sideWeight="0.5006821" side_tool="true" weight="0.25542042" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2512267" />
+      <window_info id="npm" order="2" sideWeight="0.5006821" side_tool="true" weight="0.25542042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920678" visible="true" weight="0.23583934" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920678" visible="true" weight="0.3501545" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -349,6 +383,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,130 +401,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue_app/packages/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/adonis.sqlite">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/1503248427885_user.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/1503248427886_token.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Token.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="14282" selection-start-line="14282" selection-end-line="14282" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/packages/mailchimp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@adonisjs/framework/src/Server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="471" column="5" lean-forward="true" selection-start-line="471" selection-start-column="5" selection-end-line="471" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="174" column="23" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/adonis.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/Http/Api/V1/AuthController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Base.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue_app/env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_app/store/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Register.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Register.vue" />
     <entry file="file://$PROJECT_DIR$/vue_app/components/Auth/login/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -497,9 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,19 +426,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Login.vue" />
     <entry file="file://$PROJECT_DIR$/vue_app/components/Auth/register/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1249">
@@ -538,109 +448,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Forgot.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Drawer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Layout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/Layout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Footer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Toolbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Auth/Forgot.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Drawer.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Layout.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/Layout.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.html" />
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/layout/layout.js" />
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Footer.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Partials/Toolbar.vue" />
     <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -651,12 +473,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.scss">
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="36">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/Pages/Dashboard/Children/Contacts.vue" />
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -665,31 +491,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.html">
+    <entry file="file://$PROJECT_DIR$/public/images/sprite.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="252">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.scss">
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="1044">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="360">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/_parentLayout/_parentLayout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend.edge">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/footer/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+        <state>
+          <caret selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Home/Home.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_app/components/Layouts/header/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439942618496_order_type_3_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439942612615_order_type_2_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439938977160_comments_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439942605857_order_type_1_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1503248427885_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1503248427886_token.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439937791379_material_category_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1439938018394_package_categories_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1449938024042_packages_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1539940569387_responds_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1539868443286_companies_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1539941333802_transactions_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1539869142356_orders_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/1449937620398_materials_schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>

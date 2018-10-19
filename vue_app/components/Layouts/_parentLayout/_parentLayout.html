@@ -1,13 +1,15 @@
 <section class="parent-layout">
   <v-app id="inspire">
-    <appHeader/>
-    <appNavbar/>
-    <v-content>
-      <v-container >
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-    <app-footer />
+  <appHeader/>
+      <main class="parent-layout__main-content">
+        <div class="nav-wrap">
+          <appNavbar/>
+        </div>
+        <div class="router-view-wrap">
+          <router-view></router-view>
+        </div>
+      </main>
+    <appFooter />
   </v-app>
 </section>
 

@@ -9,6 +9,11 @@ class UserSchema extends Schema {
       table.string('name').notNullable()
       table.string('email').notNullable().unique()
       table.string('password').notNullable()
+      table.string('ip_address')
+      table.string('user_agent')
+      table.integer('reg_attempts', 5).defaultTo(0)
+      table.integer('reset_attempts', 5).defaultTo(0)
+      table.string('remember_token', 255)
       table.timestamps()
     })
   }

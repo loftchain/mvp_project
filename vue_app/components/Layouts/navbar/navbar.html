@@ -1,16 +1,77 @@
-<section class="navbar">
-    <v-navigation-drawer v-model="drawer" permanent absolute width="100">
-      <v-list class="pt-0" dense>
-        <v-list-tile v-for="item in items" :key="item.title" @click="">
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-
-          <v-list-tile-content>
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
+  <section class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link main-nav__link--active">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-orders"></use>
+          </svg>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-neworder"></use>
+          </svg>
+          <span>New order</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="27">
+            <use xlink:href="images/sprite.svg#icon-myorders"></use>
+          </svg>
+          <span>My orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-companyprofile"></use>
+          </svg>
+          <span>Company profile</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-documents"></use>
+          </svg>
+          <span>Documents</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-buytokens"></use>
+          </svg>
+          <span>Buy Token</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-rating"></use>
+          </svg>
+          <span>Rating</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-logistic"></use>
+          </svg>
+          <span>Logistics</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-settings"></use>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
 </section>
 

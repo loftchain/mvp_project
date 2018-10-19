@@ -6,8 +6,7 @@ import Register from '../components/Auth/register/index'
 import Forgot from '../components/Auth/forgot/index'
 
 import ParentLayout from '../components/Layouts/_parentLayout/index'
-import DashboardHome from '../Pages/Dashboard/Children/Home'
-import DashboardContacts from '../Pages/Dashboard/Children/Contacts'
+import Home from '../components/Home/Home'
 
 let router = new VueRouter({
     mode: 'history',
@@ -18,8 +17,7 @@ let router = new VueRouter({
         {
             path: '/', component: ParentLayout, meta: { requiredAuth: true },
             children: [
-                { path: '', component: DashboardHome, name: 'dashboard-home' },
-                { path: 'contacts', component: DashboardContacts, name: 'dashboard-contacts' },
+                { path: '', component: Home, name: 'home' },
             ]
         },
     ]
