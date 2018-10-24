@@ -4,9 +4,11 @@ import VueRouter from 'vue-router'
 import 'vuetify/dist/vuetify.min.css'
 import Vuetify from 'vuetify'
 
-import VueAuth from './packages/auth'
-import VueHttp from './packages/axios'
-import VueMailChimp from './packages/mailchimp'
+import VueConfig from 'vue-configuration';
+import env from './env';
+
+import VueAuth from './services/auth'
+import VueHttp from './services/axios'
 
 import store from './store'
 import router from './router'
@@ -15,7 +17,9 @@ Vue.use(VueRouter)
 Vue.use(Vuetify)
 Vue.use(VueAuth)
 Vue.use(VueHttp)
-Vue.use(VueMailChimp)
+Vue.use(VueConfig, {
+  config: env
+});
 
 import Base from './components/Base'
 

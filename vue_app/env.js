@@ -1,12 +1,6 @@
-import Vue from 'vue'
-import vueConfig  from 'vue-config'
-
-
-const configs = {
-  MAILCHIMP_API_KEY: 'd3f58cfc0b7b89981bf77b6820d29985-us18',
-  MAILCHIMP_LIST_ID: '184e5d52d7',
-  MAILCHIMP_FROM_NAME: 'Supper support',
-  MAILCHIMP_FROM_EMAIL: 'support@loftchain.io',
-}
-
-Vue.use(vueConfig, configs)
+export default {
+  UNISENDER_LIST_ID: '15233965',
+  UNISENDER_API_KEY: '6jnh15wbr5b1ndjzmykwcqmiqyfdk6xnyfkmei6e',
+  UNISENDER_FROM_NAME: 'Supper support',
+  UNISENDER_FROM_EMAIL: 'loftchain@gmail.com',
+};

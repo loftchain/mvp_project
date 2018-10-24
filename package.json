@@ -36,6 +36,7 @@
     "mysql": "^2.15.0",
     "vee-validate": "^2.1.0-beta.5",
     "vue-config": "^1.0.0",
+    "vue-configuration": "^1.0.3",
     "vue-grecaptcha": "^1.0.1",
     "vue-invisible-recaptcha": "^0.2.1",
     "vue-recaptcha": "^1.1.1"
