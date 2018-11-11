@@ -5,26 +5,25 @@ const Logger = use('Logger')
 
 class AuthController {
 
-    async login ({ request, response, auth })
-    {
-        Logger.transport('file').info('debug');
-        const { email, password } = request.all()
-        const login = await auth.attempt(email, password)
-        return login
-    }
+  async login({request, response, auth}) {
+    Logger.transport('file').info('login');
+    const {email, password} = request.all()
+    const login = await auth.attempt(email, password)
+    return login
+  }
 
-    async register ({ request, response, auth })
-    {
-        const { name, email, password } = request.all()
-        const user = await User.create({name, email, password})
+  async register({request, response, auth}) {
 
-        return user
-    }
+    const { email, password, password_confirmed } = request.all()
+    const user = await User.create({ email, password })
+    Logger.transport('file').info(user);
 
-    async getUserInfo ({ request, response, auth })
-    {
-        return await auth.getUser()
-    }
+    return user
+  }
+
+  async getUserInfo({request, response, auth}) {
+    return await auth.getUser()
+  }
 
 }
 

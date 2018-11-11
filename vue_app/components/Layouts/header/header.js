@@ -1,4 +1,4 @@
-import UnisenderMixin from '../../../services/unisender'
+import UnisenderMixin from '../../../mixins/unisender'
 import { mapState } from 'vuex'
 
 

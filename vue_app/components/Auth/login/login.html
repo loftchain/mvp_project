@@ -1,61 +1,106 @@
 <section class="login">
-  <v-app id="inspire">
-    <v-content>
-      <v-container fluid fill-height>
-        <v-layout align-center justify-center>
-          <v-flex xs12 sm8 md4>
-            <v-form @submit.prevent="doLogin" lazy-validation>
-              <v-card class="elevation-12">
-                <v-toolbar dark color="primary">
-                  <v-toolbar-title>Login form</v-toolbar-title>
-                </v-toolbar>
-                <v-card-text>
+  <!--<v-app id="inspire">-->
+    <!--<v-content>-->
+      <!--<v-container fluid fill-height>-->
+        <!--<v-layout align-center justify-center>-->
+          <!--<v-flex xs12 sm8 md4>-->
+            <!--<v-form @submit.prevent="doLogin" lazy-validation>-->
+              <!--<v-card class="elevation-12">-->
+                <!--<v-toolbar dark color="primary">-->
+                  <!--<v-toolbar-title>Login form</v-toolbar-title>-->
+                <!--</v-toolbar>-->
+                <!--<v-card-text>-->
 
-                  <v-text-field
-                    v-validate="'required|email'"
-                    :error-messages="errors.collect('email')"
-                    data-vv-name="email"
-                    prepend-icon="person"
-                    name="login"
-                    label="Email"
-                    type="email"
-                    v-model="user.email"
-                    required>
-                  </v-text-field>
-                  <v-text-field
-                    v-validate="'required|min:3|max:128'"
-                    :error-messages="errors.collect('password')"
-                    data-vv-name="password"
-                    prepend-icon="lock"
-                    name="password"
-                    label="Password"
-                    id="password"
-                    type="password"
-                    v-model="user.password"
-                    required>
-                  </v-text-field>
+                  <!--<v-text-field-->
+                    <!--v-validate="'required|email'"-->
+                    <!--:error-messages="errors.collect('email')"-->
+                    <!--data-vv-name="email"-->
+                    <!--prepend-icon="person"-->
+                    <!--name="login"-->
+                    <!--label="Email"-->
+                    <!--type="email"-->
+                    <!--v-model="user.email"-->
+                    <!--required>-->
+                  <!--</v-text-field>-->
+                  <!--<v-text-field-->
+                    <!--v-validate="'required|min:3|max:128'"-->
+                    <!--:error-messages="errors.collect('password')"-->
+                    <!--data-vv-name="password"-->
+                    <!--prepend-icon="lock"-->
+                    <!--name="password"-->
+                    <!--label="Password"-->
+                    <!--id="password"-->
+                    <!--type="password"-->
+                    <!--v-model="user.password"-->
+                    <!--required>-->
+                  <!--</v-text-field>-->
 
-                </v-card-text>
-                <v-card-actions>
-                  <router-link :to="{ name: 'register' }" class="btn btn--depressed">
-                    Register
-                  </router-link>
-                  <v-spacer></v-spacer>
-                  <invisible-recaptcha
-                    sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
-                    :callback="doLogin"
-                    class="btn btn-danger"
-                    color="primary"
-                    type="submit">
-                    Login
-                  </invisible-recaptcha>
-                </v-card-actions>
-              </v-card>
-            </v-form>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-content>
-  </v-app>
+                <!--</v-card-text>-->
+                <!--<v-card-actions>-->
+                  <!--<router-link :to="{ name: 'register' }" class="btn btn&#45;&#45;depressed">-->
+                    <!--Register-->
+                  <!--</router-link>-->
+                  <!--<v-spacer></v-spacer>-->
+                  <!--<invisible-recaptcha-->
+                    <!--sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"-->
+                    <!--:callback="doLogin"-->
+                    <!--class="btn btn-danger"-->
+                    <!--color="primary"-->
+                    <!--type="submit">-->
+                    <!--Login-->
+                  <!--</invisible-recaptcha>-->
+                <!--</v-card-actions>-->
+              <!--</v-card>-->
+            <!--</v-form>-->
+          <!--</v-flex>-->
+        <!--</v-layout>-->
+      <!--</v-container>-->
+    <!--</v-content>-->
+  <!--</v-app>-->
+  <div class="sign">
+  <header class="sign__header">
+    <div class="sign__header-wrapper">
+      <a class="sign__logo" href="#">
+        <img src="images/logo.png" alt="Open Packaging Network">
+      </a>
+      <p class="sign__header-text">
+        Open Packaging<br>
+        Network
+      </p>
+    </div>
+  </header>
+  <div class="sign__content">
+    <h1 class="sign__title">
+      Sign In
+    </h1>
+    <form class="sign__form" @submit.prevent="doLogin" method="post">
+      <div class="sign__input-group">
+        <input class="sign__input" v-model="user.email" id="email-in" type="text" placeholder="Enter email">
+        <label for="email-in"  class="sign__label sign__label--email">Email</label>
+      </div>
+      <div class="sign__input-group">
+        <input class="sign__input" v-model="user.password" id="password-in" type="password" placeholder="Enter password">
+        <label for="password-in" class="sign__label sign__label--password">Password</label>
+      </div>
+      <router-link class="sign__forgot-link" :to="{ name: 'forgot' }">
+        Forgot password?
+      </router-link>
+      <invisible-recaptcha
+        sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
+        :callback="doLogin"
+        class="sign__button"
+        color="primary"
+        type="submit">
+        Sign in
+      </invisible-recaptcha>
+      <p class="sign__text-up">
+        <span>Don’t have an account?</span>
+        <router-link :to="{ name: 'register' }">
+          Sign Up!
+        </router-link>
+      </p>
+    </form>
+  </div>
+  </div>
 </section>
 

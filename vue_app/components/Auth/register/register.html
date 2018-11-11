@@ -1,76 +1,53 @@
 <section class="register">
-  <v-app id="inspire">
-    <v-content>
-      <v-container fluid fill-height>
-        <v-layout align-center justify-center>
-          <v-flex xs12 sm8 md4>
-            <v-form @submit.prevent="doRegister" lazy-validation>
-              <v-card class="elevation-12">
-                <v-toolbar dark color="primary">
-                  <v-toolbar-title>Register form</v-toolbar-title>
-                </v-toolbar>
-                <v-card-text>
-
-                  <v-text-field
-                    v-validate="'required|max:55'"
-                    :counter="55"
-                    :error-messages="errors.collect('name')"
-                    data-vv-name="name"
-                    required
-                    prepend-icon="person"
-                    name="name"
-                    label="Name"
-                    type="text"
-                    v-model="user.name">
-                  </v-text-field>
-
-                  <v-text-field
-                    v-validate="'required|email'"
-                    :error-messages="errors.collect('email')"
-                    data-vv-name="email"
-                    prepend-icon="person"
-                    name="email"
-                    label="Email"
-                    type="email"
-                    v-model="user.email"
-                    required>
-                  </v-text-field>
-
-                  <v-text-field
-                    v-validate="'required|min:3|max:128'"
-                    :counter="3"
-                    :error-messages="errors.collect('password')"
-                    data-vv-name="password"
-                    prepend-icon="lock"
-                    name="password"
-                    label="Password"
-                    id="password"
-                    type="password"
-                    v-model="user.password"
-                    required>
-                  </v-text-field>
-
-                </v-card-text>
-                <v-card-actions>
-                  <router-link :to="{ name: 'login' }" class="btn btn--depressed">
-                    Login
-                  </router-link>
-                  <v-spacer></v-spacer>
-                  <invisible-recaptcha
-                    sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
-                    :callback="doRegister"
-                    class="btn btn-danger"
-                    color="primary"
-                    type="submit">
-                    Register
-                  </invisible-recaptcha>
-                </v-card-actions>
-              </v-card>
-            </v-form>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-content>
-  </v-app>
+  <div class="sign">
+    <header class="sign__header">
+      <div class="sign__header-wrapper">
+        <a class="sign__logo" href="#">
+          <img src="images/logo.png" alt="Open Packaging Network">
+        </a>
+        <p class="sign__header-text">
+          Open Packaging<br>
+          Network
+        </p>
+      </div>
+    </header>
+    <div class="sign__content">
+      <h1 class="sign__title">
+        Sign Up
+      </h1>
+      <form class="sign__form" @submit.prevent="doRegister" method="post">
+        <div class="sign__input-group sign__input-group--email">
+          <input class="sign__input" v-model="user.email" id="email-in" type="text" placeholder="Enter email">
+          <label for="email-in" class="sign__label sign__label--email">Email</label>
+        </div>
+        <div class="sign__input-group sign__input-group--password">
+          <input class="sign__input" v-model="user.password" id="password-up1" type="password" placeholder="Enter password">
+          <label for="password-up1" class="sign__label sign__label--password">Password</label>
+        </div>
+        <div class="sign__input-group sign__input-group--password">
+          <input class="sign__input" v-model="user.password_confirmed" id="password-up2" type="password" placeholder="Enter password">
+          <label for="password-up2" class="sign__label sign__label--password">Repeat password</label>
+        </div>
+        <router-link class="sign__forgot-link" :to="{ name: 'forgot' }">
+          Forgot password?
+        </router-link>
+        <invisible-recaptcha
+          sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
+          :callback="doRegister"
+          class="sign__button"
+          color="primary"
+          type="submit">
+          Sign up
+        </invisible-recaptcha>
+        <p class="sign__text-up">
+          <span>Already have an account</span>
+          <router-link :to="{ name: 'login' }">
+            Sign In!
+          </router-link>
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
+
 
