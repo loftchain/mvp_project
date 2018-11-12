@@ -1,0 +1,16 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        ["env", { "targets": { "browsers": ["> 1%"] }, "modules": false }]
+      ]
+    },
+    "development": {
+      "presets": [
+        ["env", { "targets": { "chrome": 68 }, "modules": false }]
+      ]
+    }
+  },
+  "plugins": ["transform-runtime", "syntax-object-rest-spread"],
+  "comments": false
+}

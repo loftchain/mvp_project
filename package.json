@@ -10,7 +10,10 @@
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "webpack:dev": "webpack",
+    "webpack:watch": "webpack --watch",
+    "webpack:production": "cross-env NODE_ENV=production webpack -p"
   },
   "keywords": [
     "adonisjs",
@@ -42,17 +45,31 @@
     "vuelidate": "^0.7.4"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
     "axios": "^0.18.0",
     "laravel-mix": "^2.1.11",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
     "vuetify": "^1.0.14",
     "vuex": "^3.0.1",
-    "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
-    "vue-template-compiler": "^2.5.17"
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-serve": "^2.0.2",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^1.0",
+    "dotenv": "^6.0",
+    "file-loader": "~1.1.6",
+    "imports-loader": "^0.8",
+    "mini-css-extract-plugin": "^0.4.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.0"
   },
   "autoload": {
     "App": "./app"
