@@ -31,7 +31,7 @@ if (process.env.WEBPACK_SERVE) {
 module.exports.mode = isProduction ? 'production' : 'development'
 
 module.exports.entry = {
-    app: './vue_app/app.js',
+    app: './vue_app/app',
 }
 
 module.exports.output = {
@@ -70,7 +70,7 @@ module.exports.module = {
         },
         {
             test: /\.css$/,
-            exclude: path.resolve(__dirname, 'resources/assets/js/components'),
+            exclude: path.resolve(__dirname, 'vue_app/components'),
             use: [
                 isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
                 'css-loader'
@@ -78,7 +78,7 @@ module.exports.module = {
         },
         {
             test: /\.(scss|sass)$/,
-            exclude: path.resolve(__dirname, 'resources/assets/js/components'),
+            exclude: path.resolve(__dirname, 'vue_app/components'),
             use: [
                 isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
                 'css-loader',
@@ -88,19 +88,21 @@ module.exports.module = {
         // Always inline styles in Vue Component
         {
             test: /\.css$/,
-            include: path.resolve(__dirname, 'resources/assets/js/components'),
+            include: path.resolve(__dirname, 'vue_app/components'),
             use: ['vue-style-loader', 'css-loader']
         },
         {
             test: /\.(scss|sass)$/,
-            include: path.resolve(__dirname, 'resources/assets/js/components'),
+            include: path.resolve(__dirname, 'vue_app/components'),
             use: [
                 'vue-style-loader',
                 'css-loader',
                 {
                     loader: 'sass-loader',
                     options: {
-                        indentedSyntax: true
+                        // indentedSyntax: true,
+                        sourceMap: true,
+                        data: '@import "./vue_app/app";'
                     }
                 }
             ]
