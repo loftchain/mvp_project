@@ -72,7 +72,7 @@ module.exports.module = {
             test: /\.css$/,
             exclude: path.resolve(__dirname, 'vue_app/components'),
             use: [
-                isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+                MiniCssExtractPlugin.loader,
                 'css-loader'
             ]
         },
@@ -80,7 +80,7 @@ module.exports.module = {
             test: /\.(scss|sass)$/,
             exclude: path.resolve(__dirname, 'vue_app/components'),
             use: [
-                isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+                MiniCssExtractPlugin.loader,
                 'css-loader',
                 'sass-loader'
             ]
@@ -102,7 +102,7 @@ module.exports.module = {
                     options: {
                         // indentedSyntax: true,
                         sourceMap: true,
-                        data: '@import "./vue_app/app";'
+                        data: '@import "./vue_app/app.scss";'
                     }
                 }
             ]
