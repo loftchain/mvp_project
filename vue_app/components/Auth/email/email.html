@@ -16,14 +16,15 @@
       <h1 class="sign__title">
         Forgot password
       </h1>
-      <form class="sign__form" @submit.prevent="send" method="post">
+      <form class="sign__form" @submit.prevent="getUserToken" method="post">
         <div class="sign__input-group sign__input-group--email">
+          <div v-if="error.error && error.type === 'not_found_user'" style="color: red; font-size: 15px">{{ error.message }}</div>
           <input class="sign__input" v-model="user.email" id="email-in" type="text" placeholder="Enter email">
           <label for="email-in" class="sign__label sign__label--email">Email</label>
         </div>
         <invisible-recaptcha
                 sitekey="6LdW4mIUAAAAACGlppsS93XhIgLZhki4XPAqOOkN"
-                :callback="send"
+                :callback="getUserToken"
                 class="sign__button"
                 color="primary"
                 type="submit">

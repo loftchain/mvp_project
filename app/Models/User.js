@@ -16,6 +16,12 @@ class User extends Model {
         userInstance.password = await Hash.make(userInstance.password)
       }
     })
+
+      this.addHook('beforeUpdate', async (userInstance) => {
+        if (userInstance.password) {
+            userInstance.password = await Hash.make(userInstance.password)
+        }
+      })
   }
 
   /**

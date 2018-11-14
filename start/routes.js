@@ -26,7 +26,9 @@ Route.group(() => {
     Route.post('auth/login', 'AuthController.login')
     Route.post('auth/register', 'AuthController.register')
     Route.get('auth/user', 'AuthController.getUserInfo')
-    Route.post('forgot/email', 'ForgotPasswordController.')
+    Route.post('forgot/email', 'ForgotPasswordController.sendResetLinkEmail')
+    Route.get('forgot/info', 'ForgotPasswordController.getUserInfo')
+    Route.post('password/reset', 'ForgotPasswordController.passwordReset')
 
 }).prefix('api/v1').namespace('Api/V1')
 Route.any('*', ({ view }) => view.render('frontend'))

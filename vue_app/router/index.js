@@ -14,7 +14,7 @@ let router = new VueRouter({
     routes: [
         { path: '/login', component: Login, name: 'login', meta: { requiredAuth: false } },
         { path: '/register', component: Register, name: 'register', meta: { requiredAuth: false } },
-        { path: '/forgot', component: Forgot, name: 'forgot', meta: { requiredAuth: false } },
+        { path: '/forgot/password/:token', component: Forgot, name: 'forgot', meta: { requiredAuth: false } },
         { path: '/forgot/email', component: Email, name: 'email', meta: { requiredAuth: false } },
         {
             path: '/', component: ParentLayout, meta: { requiredAuth: true },

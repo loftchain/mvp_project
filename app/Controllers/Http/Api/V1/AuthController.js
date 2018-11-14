@@ -2,6 +2,7 @@
 
 const User = use('App/Models/User')
 const Logger = use('Logger')
+const randomString = require('randomstring')
 
 class AuthController {
 
@@ -15,7 +16,7 @@ class AuthController {
   async register({request, response, auth}) {
 
     const { email, password, password_confirmed } = request.all()
-    const user = await User.create({ email, password })
+    const user = await User.create({ email, password, token: randomString.generate(20) })
     Logger.transport('file').info(user);
 
     return user
